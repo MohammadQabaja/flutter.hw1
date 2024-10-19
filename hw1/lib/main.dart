@@ -5,6 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key); // Make the constructor const
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -43,7 +44,7 @@ class UserProfilePage extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 40,
-                    backgroundImage: AssetImage('assets/mo.jpg'),
+                    backgroundImage: AssetImage('assets/image/mo.jpg'),
                   ),
                   SizedBox(width: 16),
                   Column(
